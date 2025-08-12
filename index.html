@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skymetria — аэросъёмка в Эстонии: стройка, недвижимость, инспекции</title>
+  <meta name="description" content="Профессиональная съёмка с дрона в Эстонии: стройка, недвижимость, инспекции объектов. Лицензии EASA, страхование, быстрые сроки." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="site-header glass">
+    <a href="#" class="logo" aria-label="Skymetria">
+      <img src="assets/logo.svg" alt="" width="28" height="28" />
+      <span>Skymetria</span>
+    </a>
+    <nav class="nav" aria-label="Основное">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#work">Портфолио</a></li>
+        <li><a href="#pricing">Цены</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#about">Оборудование</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="btn icon-btn" aria-label="Переключить тему">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+          <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm7 8h2a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2ZM3 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm12.95-6.364a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.415a1 1 0 0 1 0-1.414ZM3.222 17.364a1 1 0 0 1 1.415 0l1.414 1.415a1 1 0 1 1-1.414 1.414l-1.415-1.414a1 1 0 0 1 0-1.415Z"/>
+          <circle cx="12" cy="12" r="5"></circle>
+        </svg>
+      </button>
+      <a href="#contact" class="btn primary">Заказать</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <h1 class="reveal">Аэросъёмка <span class="accent">строек и объектов</span> по всей Эстонии</h1>
+        <p class="lead reveal delay-1">Фото, видео, 3D и ортомозаики для отчётности и маркетинга. Лицензии EASA • Страхование ответственности • Материалы за 24–48 часов.</p>
+        <div class="cta reveal delay-2">
+          <a href="#pricing" class="btn primary shine">Цены и пакеты</a>
+          <a href="#work" class="btn outline">Портфолио</a>
+        </div>
+        <ul class="badges reveal delay-3">
+          <li>✅ EASA A1/A3 • A2</li>
+          <li>🛡️ Liability Insurance</li>
+          <li>🚚 Быстрая сдача</li>
+        </ul>
+      </div>
+      <div class="hero-media reveal delay-2" aria-hidden="true">
+        <img src="assets/hero-illustration.svg" alt="" />
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2 class="section-title reveal">Что мы делаем</h2>
+      <div class="grid cards reveal delay-1">
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-build.svg" alt="" /></div>
+          <h3>Строительство</h3>
+          <p>Прогресс-репорты, контроль качества, безопасность, фото/видео отчётность, таймлапсы с одинаковых точек.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-home.svg" alt="" /></div>
+          <h3>Недвижимость</h3>
+          <p>Кинематографичные ролики и фото для продаж и аренды. Акцент на локации и инфраструктуру.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-inspect.svg" alt="" /></div>
+          <h3>Инспекции</h3>
+          <p>Облет кровель, фасадов и линий. Детализация + съёмка по чек‑листу инженера.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-map.svg" alt="" /></div>
+          <h3>3D/Картография</h3>
+          <p>Фотограмметрия, ортомозаики и модели рельефа. Экспорт под AutoCAD/QGIS/BIM.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title reveal">Портфолио</h2>
+      <div class="filters reveal delay-1" role="tablist" aria-label="Фильтр работ">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">Все</button>
+        <button class="chip" data-filter="construction" role="tab">Стройка</button>
+        <button class="chip" data-filter="realty" role="tab">Недвижимость</button>
+        <button class="chip" data-filter="inspection" role="tab">Инспекции</button>
+      </div>
+      <div class="gallery reveal delay-2">
+        <figure class="item" data-cat="construction">
+          <img src="assets/ph-1.svg" alt="Стройка — общий план" />
+          <figcaption>Отчёт — июль</figcaption>
+        </figure>
+        <figure class="item" data-cat="construction">
+          <img src="assets/ph-2.svg" alt="Монтаж перекрытий" />
+          <figcaption>Монтаж перекрытий</figcaption>
+        </figure>
+        <figure class="item" data-cat="realty">
+          <img src="assets/ph-3.svg" alt="Жилой дом" />
+          <figcaption>Дом у моря</figcaption>
+        </figure>
+        <figure class="item" data-cat="inspection">
+          <img src="assets/ph-4.svg" alt="Инспекция кровли" />
+          <figcaption>Кровля — инспекция</figcaption>
+        </figure>
+        <figure class="item" data-cat="realty">
+          <img src="assets/ph-5.svg" alt="Апартаменты" />
+          <figcaption>Апартаменты</figcaption>
+        </figure>
+        <figure class="item" data-cat="inspection">
+          <img src="assets/ph-6.svg" alt="Фасад — дефекты" />
+          <figcaption>Фасад — дефекты</figcaption>
+        </figure>
+        <figure class="item" data-cat="construction">
+          <img src="assets/ph-7.svg" alt="Стройплощадка" />
+          <figcaption>Прогресс — этап 2</figcaption>
+        </figure>
+        <figure class="item" data-cat="realty">
+          <img src="assets/ph-8.svg" alt="Коттеджный посёлок" />
+          <figcaption>Коттеджи</figcaption>
+        </figure>
+      </div>
+      <p class="hint reveal delay-3">* Замените примеры своими фото/видео. Лайтбокс открывается по клику.</p>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h2 class="section-title reveal">Цены и пакеты</h2>
+      <div class="grid pricing reveal delay-1">
+        <article class="price-card">
+          <h3>Start</h3>
+          <div class="price"><span>€</span>120</div>
+          <ul>
+            <li>До 45 минут на объекте</li>
+            <li>15–25 фото</li>
+            <li>Базовая коррекция</li>
+            <li>Передача за 48 ч</li>
+          </ul>
+          <a href="#contact" class="btn secondary">Заказать</a>
+        </article>
+
+        <article class="price-card featured">
+          <div class="flag">Хит</div>
+          <h3>Standard</h3>
+          <div class="price"><span>€</span>200</div>
+          <ul>
+            <li>1,5 часа на объекте</li>
+            <li>30–50 фото + 1–2 мин видео</li>
+            <li>Монтаж и цветокоррекция</li>
+            <li>Передача за 24–48 ч</li>
+          </ul>
+          <a href="#contact" class="btn primary">Выбрать</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Pro</h3>
+          <div class="price"><span>€</span>380</div>
+          <ul>
+            <li>До 3 часов на объекте</li>
+            <li>Фото + 2–4 мин видео</li>
+            <li>3D/ортомозаика (по запросу)</li>
+            <li>Приоритетные сроки</li>
+          </ul>
+          <a href="#contact" class="btn secondary">Заказать</a>
+        </article>
+      </div>
+      <p class="hint reveal delay-2">* Harjumaa. Сложные полёты/зоны и выезды — индивидуально.</p>
+    </section>
+
+    <section id="process" class="section container">
+      <h2 class="section-title reveal">Как это работает</h2>
+      <ol class="steps reveal delay-1">
+        <li><span>1</span> Бриф: адрес, цель, пожелания</li>
+        <li><span>2</span> Согласование слёта и зон</li>
+        <li><span>3</span> Съёмка по чек‑листу</li>
+        <li><span>4</span> Монтаж и обработка</li>
+        <li><span>5</span> Доставка материалов</li>
+      </ol>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title reveal">Оборудование и допуски</h2>
+      <div class="grid cards reveal delay-1">
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-drone.svg" alt="" /></div>
+          <h3>DJI Mavic 3 / Air 3</h3>
+          <p>4K60, 10‑бит, 20MP фото. ND‑фильтры, резервный дрон, батареи.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-badge.svg" alt="" /></div>
+          <h3>Лицензии EASA</h3>
+          <p>A1/A3 • A2. Соблюдаем ограничительные зоны, NOTAM, высоты, дистанции.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/ic-shield.svg" alt="" /></div>
+          <h3>Страхование</h3>
+          <p>Гражданская ответственность. Предоставим полис по запросу.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title reveal">Отзывы</h2>
+      <div class="grid testimonials reveal delay-1">
+        <figure class="testimonial">
+          <blockquote>«Получили отчёт уже на следующий день. Реперные точки совпали идеально.»</blockquote>
+          <figcaption>— Денис, прораб</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>«Сделали ролик для продажи объекта. Покрыли фасад, подъезд и вид на море.»</blockquote>
+          <figcaption>— Марьянна, риелтор</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="faq" class="section container">
+      <h2 class="section-title reveal">FAQ</h2>
+      <div class="accordion reveal delay-1" role="tablist">
+        <details>
+          <summary>Можно ли летать в городе?</summary>
+          <p>Да, при соблюдении зон и высот. В некоторых местах требуется согласование. Проверяем карту ограничений заранее.</p>
+        </details>
+        <details>
+          <summary>Как быстро вы отдаёте материалы?</summary>
+          <p>Обычно в течение 24–48 часов. Срочная сдача — по договорённости.</p>
+        </details>
+        <details>
+          <summary>Что насчёт погоды?</summary>
+          <p>Снимаем при ветре до ~10–12 м/с и без осадков. Иначе перенос без штрафов.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title reveal">Связаться с нами</h2>
+      <form id="contactForm" class="contact-form glass reveal delay-1" novalidate>
+        <div class="field">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Как к вам обращаться?" required />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" placeholder="+372 ..." />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error"></small>
+        </div>
+        <div class="field full">
+          <label for="msg">Задача</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="Где, что снимать, сроки, формат..."></textarea>
+          <small class="error"></small>
+        </div>
+        <div class="field inline">
+          <label class="checkbox">
+            <input type="checkbox" id="agree" required />
+            <span>Соглашаюсь с обработкой данных</span>
+          </label>
+          <button type="submit" class="btn primary shine">Отправить запрос</button>
+        </div>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo">
+          <img src="assets/logo.svg" alt="" width="24" height="24" />
+          <span>Skymetria</span>
+        </a>
+        <p class="muted">Аэросъёмка для строительства, недвижимости и инспекций. Эстония.</p>
+      </div>
+      <nav aria-label="Нижнее меню">
+        <ul class="footer-menu">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#work">Портфолио</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <a href="mailto:hello@skymetria.ee" class="chip">hello@skymetria.ee</a>
+        <a href="tel:+3720000000" class="chip">+372 000 0000</a>
+      </div>
+    </div>
+    <p class="fineprint">© <span id="year"></span> Skymetria. Все права защищены.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр изображения">
+    <button class="lb-close" aria-label="Закрыть">×</button>
+    <img class="lb-img" alt="" />
+    <p class="lb-cap"></p>
+  </div>
+</body>
+</html>
